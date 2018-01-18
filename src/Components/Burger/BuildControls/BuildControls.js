@@ -10,7 +10,7 @@ const controls = [
 ];
 
 const buildControls = (props) =>{
-    // console.log(props);
+    console.log(props);
     // console.log(props.disabled['salad']);
     return(
         <div className = {classes.BuildControls}>
@@ -27,6 +27,7 @@ const buildControls = (props) =>{
             <button 
                 className = {classes.OrderButton}
                 disabled = {!props.purchasable}
+                onClick = {props.ordered}
             >ORDER NOW</button>
         </div>   
     );
